@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*https://www.dafont.com/ para baixar fontes*/
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px; /* com mais elementos não se espalha na tela*/
+    margin: 0;
+    padding: 15px; /* espaçamento interno para o conteudo do body*/
+}
+
+header{ /* cabeçalho*/
+    display: flex; /* para manipular elementos, vai ser um flex box*/
+    flex-direction: row;/* transforma numa linha*/
+    justify-content: space-between; /* espaço entre eles*/
+    align-items: center; /* alinhar os itens do cabeçalho*/
+}
+
+#title{
+    flex-direction: column; /* deixar coluna fixa*/
+    line-height: 10px;/* altura linha entre Marketing Criativo*/
+}
+
+li{
+    display: inline-block; /* faz os itens virarem linha*/
+    margin: 20px; /* deu margin so na li para mexer só nos elementos do conj, se desse no ul mexeria na "caixa"*/
+}
+
+a{
+    color: white;
+}
+
+a:hover{ /* efeito de quando o mouse passa em cima*/
+    color:  rgb(132, 14, 201);
+    transition: 0.3s all; /* tornar mais suave o tempo de passar o mouse*/
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{ /* passar o mouse fundo violeta e letra branca*/
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1{
+    font-weight: 200; /* fonte mais "fininha" neste caso*/
+}
+
+main{
+    display: flex; /* vai separar as div em duas colunas*/
+    flex-direction: row;
+    margin-top: 50px; /* cria margem de cima que empurra os elementos para baixo*/
+}
+
+h2{
+   font-size: 56px;
+   line-height: 10px;
+   font-family: 'Poppins', sans-serif;
+}
+
+span{
+    color:  rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px; /* deixar o parágrafo mais separado*/
+    max-width: 500px; /* largura máxima de 500px neste caso*/
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column; /* virar coluna, uma coisa embaixo da outra*/
+    width: 70%; color: /* se não colocar uma % ele ocupara 100% da div "pai" que foi especificada anteriormente, agora ele passa a ocupar 70% apenas*/
+}
+
+form [type="submit"]{
+    height: 50px;
+    width:50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{ /* vira uma mãozinha qdo o mouse chega no btn*/
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px; /* se tivesse colocado dentro do form o form iria todo pra baixo, e colocando apenas no input ele separa só as caixinhas*/
+    height: 20px; /* para ficar mais "altinho"*/
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+
+
+
+
